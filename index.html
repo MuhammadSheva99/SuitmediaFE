@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Your subtitle here</p>
+    </div>
+    <img src="img1.jpg">
+  </section>
+
+  <!-- List Post -->
+  <div class="controls">
+    <label for="sort">Sort by:</label>
+    <select id="sort">
+      <option value="newest">Newest</option>
+      <option value="oldest">Oldest</option>
+    </select>
+
+    <label for="itemsPerPage">Items per page:</label>
+    <select id="itemsPerPage">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+    </select>
+  </div>
+
+  <div id="posts" class="posts">
+    <!-- Posts will be dynamically loaded here -->
+  </div>
+
+  <div id="pagination" class="pagination">
+    <!-- Pagination controls will be dynamically generated here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
